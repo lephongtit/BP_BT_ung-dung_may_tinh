@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form>
+      <h1><PRE>     CACULATOR</PRE></h1>
+      <input type="number" id="chuso1" value="">
+      <input type="number" id="chuso2" value="">
+      <br/>
+      <br/>
+      <button type="button" onclick="add()">Addition(+)</button>
+      <button type="button" onclick="sub()">Subtraction(-)</button>
+      <button type="button" onclick=" mult()">Multiplication(X)</button>
+      <button type="button" onclick=" div()">Division(/)</button>
+      <p id="show"></p>
+  </form>
+  <script>
+      function add() {
+          let number1 = parseInt(document.getElementById("chuso1").value);
+          let number2 = parseInt(document.getElementById("chuso2").value);
+          let cong = number1 + number2;
+          document.getElementById("show").innerText = "Result addition: " + cong;
+      }
+      function sub() {
+          let number1 = document.getElementById("chuso1").value;
+          let number2 = document.getElementById("chuso2").value;
+          let tru = number1 - number2;
+          document.getElementById("show").innerText = "Result subtraction: "+ tru;
+
+     }
+     function mult() {
+         let number1 = document.getElementById("chuso1").value;
+         let number2 = document.getElementById("chuso2").value;
+         let nhan = number1 * number2;
+         document.getElementById("show").innerText = "Result multiplication: "+ nhan;
+
+     }
+     function div() {
+         let number1 = document.getElementById("chuso1").value;
+         let number2 = document.getElementById("chuso2").value;
+         let chia = number1 / number2;
+         document.getElementById("show").innerText = "Result division: "+ chia;
+
+     }
+
+
+
+  </script>
+</body>
+</html>
